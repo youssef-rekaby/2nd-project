@@ -1,4 +1,31 @@
-[[redirects]]
-from = "/*"
-to "/index.html"
-status = 200
+[build]
+  command = "npm run build"  # Replace with your build command (if applicable)
+  publish = "dist"  # Replace with the directory containing your built files
+
+[context]
+  target = "production"
+
+[headers]
+  "/":
+    headers:
+      X-Powered-By: "Netlify"
+
+[redirects]
+  # Example redirect:
+  [[redirects]]
+    from = "/old-path"
+    to = "/new-path"
+
+[functions]
+  # Example function configuration:
+  [[functions]]
+    src = "functions/my-function.js"
+    match = "/api/*"
+
+[plugins]
+  # Example plugin configuration:
+  [[plugins]]
+    package = "@netlify/plugin-gatsby"
+    inputs = [
+      "gatsby-config.js"
+    ]
