@@ -1,0 +1,162 @@
+/* the main styles */
+body {
+    font-size: 18px;
+    padding: 0;
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column  ;
+    
+}
+
+/* media query */
+
+@media (max-width: 630px) {
+    .parent {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 150px;
+    }
+}
+/* making the boxes in the middel */
+
+.parent {
+    /* box-sizing: border-box; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    flex-direction: row;
+    height: 405px;
+
+}
+
+/* styling the main score part */
+
+.main_score {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(252, 100%, 57%));
+    width: 300px;
+    height: 100%;
+    border-radius:20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+/* styling the h3 "your result" */
+
+.main_score h3{
+    color :hsl(241, 100%, 89%);
+    
+    margin-bottom: 60px;
+}
+
+/* the whole score circel */
+.score{
+    width: 125px;
+    height: 125px;
+    background: linear-gradient( to bottom , hsla(256, 72%, 46%, 1) ,hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* styling the whole score "76" */
+
+.whole_score{
+    color: hsl(0, 0%, 100%);
+    font-size: 40px;
+}
+
+/* styling the "of 10" */
+
+.of{
+    color:grey;
+    font-size: 12px;
+}
+
+.great{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.main_score p{
+    color:hsl(241, 100%, 89%) ;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+.detaled_score {
+    height: 100%;
+    width: 300px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding-left: 15px;
+    background-color: white;
+    box-shadow: 7px 7px 20px -5px grey;
+    border-radius: 10px;
+}
+
+.detaled_score .summ{
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+.result{
+    width: 225px;
+    height: 25px;
+    background-color: rgba(255, 0, 0, 0.123);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    border-radius: 6px;
+    padding:4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ .result p img{
+    width: 25px;
+    height: 17px;
+    border-radius: 50%;
+    margin-left: -10px;
+ }
+
+ .a{
+    display: block;
+    text-decoration: none;
+    border-radius: 20px ;
+    background:hsl(224, 30%, 27%);
+    width: 245px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+ }
+ .a:hover{
+    background:linear-gradient(to bottom , hsl(252, 100%, 67%) , hsl(241, 81%, 54%)) ;
+    transition-delay:0.5s ;
+    transition-duration: 2s;
+ }
+
+ /* Make the attribution section move under the boxes on smaller screens
+@media (max-width: 768px) {
+    .attribution {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  } */
